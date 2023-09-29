@@ -147,8 +147,8 @@ html {
 }
 
 body {
-  background-color: var(--space-cadet);
-  color: var(--cadet-blue-crayola);
+  background-color:  #effbff;
+  color:  #000000;
   font-size: 1.6rem;
   line-height: 1.6;
   overflow-x: hidden;

@@ -13,7 +13,7 @@ aria-label = Toggle Menu
 
 Home
 About
-Portfolio
+Projects
 Skills
 Contact
 Blog
