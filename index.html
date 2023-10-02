@@ -11,6 +11,8 @@
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
   <!-- 
     - custom css link
@@ -35,22 +37,39 @@
 
   <header class="header" data-header>
     <div class="container">
-
       <a href="#">
         <h1 class="logo">Boosung Kim</h1>
       </a>
+
+      <ul class="navbar-list social"> <!-- Move the ul with social icons outside the second nav -->
+        <li>
+          <a href="https://github.com/boosungkim" title="GitHub"><i class="fab fa-github header-icon"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/boosungk" title="LinkedIn"><i class="fab fa-linkedin header-icon"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/bytesofboosung" title="Twitter"><i class="fab fa-twitter header-icon"></i></a>
+        </li>
+        <li>
+          <a href="https://youtube.com/@{{ site.youtube_id }}" title="YouTube"><i class="fab fa-youtube header-icon"></i></a>
+        </li>
+      </ul>
+
+      
 
       <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
         <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
         <ion-icon name="close-outline" class="close-icon"></ion-icon>
       </button>
 
+      
       <nav class="navbar container">
         <ul class="navbar-list">
 
-          <li>
+          <!-- <li>
             <a href="#home" class="navbar-link" data-nav-link>Home</a>
-          </li>
+          </li> -->
 
           <!-- <li>
             <a href="#about" class="navbar-link" data-nav-link>About</a>
@@ -60,7 +79,7 @@
           </li>
 
           <li>
-            <a href="#skills" class="navbar-link" data-nav-link>Work Experience</a>
+            <a href="#work" class="navbar-link" data-nav-link>Experience</a>
           </li>
 
           <li>
@@ -72,7 +91,7 @@
           </li>
 
           <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            <a href="https://boosungkim.com/blog" class="navbar-link" data-nav-link>Blog</a>
           </li>
 
           <li>
@@ -207,13 +226,12 @@
       <!-- 
         - #SKILLS
       -->
-      <section class="section skills" id="skills">
+      <section class="section skills" id="work">
         <div class="container">
 
           <p class="section-subtitle">Work Experience</p>
 
           <h2 class="h2 section-title">My Previous Work Experiences</h2>
-      <div class="container" id="work">
         <div class="item">
           <div id="timeline">
             <div>
@@ -221,6 +239,7 @@
                 <h3>2007</h3>
                 <section>
                   <ul>
+                    <img src="./assets/images/profile.jpeg" alt="Work Image" width="100" height="100">
                     <li>Satoshi g began working on the Bitcoin concept.</li>
                   </ul>
                 </section>     
@@ -230,6 +249,7 @@
                 <section>
                   <h4>August</h4>
                   <ul>
+                    <img src="./assets/images/profile.jpeg" alt="Work Image" width="100" height="100">
                     <li>Neal Kin, Vladimir Oksman, and Charles Bry file an application for an encryption patent application.</li>
                     <li>Bitcoin.org was registered at <a href="https://anonymousspeech.com/">anonymousspeech.com</a>.</li>
                   </ul>
@@ -265,7 +285,6 @@
                   </ul>
                 </section>
             </div>
-          </div>
         </div>
       </div>
     </div>
@@ -287,78 +306,63 @@
             Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
           </p>
 
-          <ul class="portfolio-list">
+          <ul class="blog-list">
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
-                <div class="card-content">
+              <div class="blog-card">
 
-                  <p class="card-subtitle">Youtube</p>
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
 
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+                <p class="card-tag">Web Development</p>
 
-                  <span class="btn-link">
-                    <span>View Project</span>
+                <h3 class="card-title">
+                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                </h3>
 
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
+              </div>
             </li>
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
-                <div class="card-content">
+              <div class="blog-card">
 
-                  <p class="card-subtitle">Vimeo</p>
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
 
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+                <p class="card-tag">Web Development</p>
 
-                  <span class="btn-link">
-                    <span>View Project</span>
+                <h3 class="card-title">
+                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                </h3>
 
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
+              </div>
             </li>
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
-                <div class="card-content">
+              <div class="blog-card">
 
-                  <p class="card-subtitle">Soundcloud</p>
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
 
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+                <p class="card-tag">Web Development</p>
 
-                  <span class="btn-link">
-                    <span>View Project</span>
+                <h3 class="card-title">
+                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
+                </h3>
 
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Details</p>
-
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
+              </div>
             </li>
 
           </ul>
@@ -387,7 +391,7 @@
 
             <div class="wrapper">
 
-              <form action="" class="contact-form">
+              <!-- <form action="" class="contact-form">
 
                 <input type="text" name="name" placeholder="Name" required class="contact-input">
 
@@ -397,7 +401,7 @@
 
                 <button type="submit" class="btn-submit">Submit Message</button>
 
-              </form>
+              </form> -->
 
               <ul class="contact-list">
 
@@ -465,13 +469,9 @@
       <section class="section blog" id="blog">
         <div class="container">
 
-          <p class="section-subtitle">Latest News</p>
+          <p class="section-subtitle">Latest Posts</p>
 
           <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
-
-          <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
-          </p>
 
           <ul class="blog-list">
 
@@ -485,7 +485,7 @@
                   </a>
                 </figure>
 
-                <a href="#" class="card-tag">Web Development</a>
+                <p class="card-tag">Web Development</p>
 
                 <h3 class="card-title">
                   <a href="#">Jim Morisson Says when the musics over turn off the light</a>
@@ -504,7 +504,7 @@
                   </a>
                 </figure>
 
-                <a href="#" class="card-tag">Web Development</a>
+                <p class="card-tag">Web Development</p>
 
                 <h3 class="card-title">
                   <a href="#">Jim Morisson Says when the musics over turn off the light</a>
@@ -523,7 +523,7 @@
                   </a>
                 </figure>
 
-                <a href="#" class="card-tag">Web Development</a>
+                <p class="card-tag">Web Development</p>
 
                 <h3 class="card-title">
                   <a href="#">Jim Morisson Says when the musics over turn off the light</a>
@@ -552,31 +552,11 @@
     <div class="container">
 
       <p class="copyright">
-        &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reseverd
+        &copy; Copyright 2023 <a href="#" class="copyright-link">Boosung Kim</a>
       </p>
-
-      <ul class="footer-list">
-        <li>
-          <a href="#" class="footer-link">Terms & Condition</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </li>
-      </ul>
-
     </div>
   </footer>
 
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
 
 
 
